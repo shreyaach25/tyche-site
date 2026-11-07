@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Tyche · Find where your skills pay off</title>
+  <meta name="description" content="Tyche compares an engineer's profile with the hiring market: it ranks cities and countries, lists the companies hiring for that profile, and shows the skills employers ask for that you lack.">
+  <meta property="og:title" content="Tyche">
+  <meta property="og:description" content="Job market analysis and job suggestions for engineers: where to go, who is hiring, and what to learn next.">
+  <meta property="og:image" content="assets/screens/overview-light.webp">
+  <meta name="theme-color" content="#1e6e6f">
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/tyche-tokens.css">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top" aria-label="Tyche home">
+        <picture>
+          <source srcset="assets/logos/tyche-lockup-reverse.svg" media="(prefers-color-scheme: dark)">
+          <img src="assets/logos/tyche-lockup.svg" alt="Tyche" width="141" height="40">
+        </picture>
+      </a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#features">Features</a>
+        <a href="#screens">Screens</a>
+        <a href="#data">Data</a>
+        <a class="btn btn-ghost" href="#stack">How it's built</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Job market analysis for engineers</p>
+          <h1 class="display">Find where your skills pay off.</h1>
+          <p class="lede">Tyche compares your profile with the hiring market. Enter your skills, experience, target level and current pay, or upload a resume. It ranks cities and countries, lists the companies hiring for you, and shows which skills employers want that you don't have yet.</p>
+          <div class="cta">
+            <a class="btn btn-primary" href="#screens">See the screens</a>
+            <a class="btn btn-ghost" href="#how">How it works</a>
+          </div>
+        </div>
+        <figure class="frame hero-shot">
+          <div class="frame-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+          <picture>
+            <source srcset="assets/screens/overview-dark.webp" media="(prefers-color-scheme: dark)">
+            <img src="assets/screens/overview-light.webp" width="1440" height="900" alt="Tyche overview screen: roles you qualify for, average match score, skills in demand and top job matches">
+          </picture>
+        </figure>
+      </div>
+      <div class="wrap">
+        <ul class="stats" aria-label="At a glance">
+          <li><strong>11</strong><span>locations scored</span></li>
+          <li><strong>13</strong><span>employers checked by hand</span></li>
+          <li><strong>130+</strong><span>skill aliases parsed</span></li>
+          <li><strong>Live</strong><span>postings from Adzuna</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="how">
+      <div class="wrap">
+        <p class="eyebrow">How it works</p>
+        <h2 class="display-m">Three steps, one screen each.</h2>
+        <ol class="steps">
+          <li>
+            <span class="step-n">1</span>
+            <h3>Tell it about you</h3>
+            <p>Upload a resume (PDF, DOCX or TXT) or type your skills, then pick the places you'd move to. The resume is parsed in memory and never stored.</p>
+          </li>
+          <li>
+            <span class="step-n">2</span>
+            <h3>Read your market</h3>
+            <p>See demand for your skills, the role families hiring most, pay and openings per location, and your best-match jobs with a score and plain reasons.</p>
+          </li>
+          <li>
+            <span class="step-n">3</span>
+            <h3>Plan what to learn</h3>
+            <p>Get an upskilling plan built from the skills hiring employers ask for most, with how many more roles each one would open up.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section alt" id="features">
+      <div class="wrap">
+        <p class="eyebrow">Features</p>
+        <h2 class="display-m">Everything it tells you.</h2>
+        <div class="features">
+          <article class="card feature">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <h3>Location fit</h3>
+            <p>Scores each place on hiring momentum, pay uplift against your current pay, visa ease, and how many matching roles are open there.</p>
+          </article>
+          <article class="card feature">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="7" width="16" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M4 12h16"/></svg>
+            <h3>Company fit</h3>
+            <p>Scores employers on skill overlap, seniority, location and open roles. Flags <em>stretch</em> roles and roles <em>below your level</em>.</p>
+          </article>
+          <article class="card feature">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 18l5-6 4 3 7-9"/><path d="M15 6h5v5"/></svg>
+            <h3>AI roles in demand</h3>
+            <p>Year-on-year demand growth for five AI roles, from agentic AI engineer to MLOps, with each role's usual skills marked against yours.</p>
+          </article>
+          <article class="card feature">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V10M10 20V4M15 20v-7M20 20v-4"/></svg>
+            <h3>Skill gaps</h3>
+            <p>Ranks skills by the share of hiring employers that ask for them, and marks the ones you already have.</p>
+          </article>
+          <article class="card feature">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h4"/></svg>
+            <h3>Posting parser</h3>
+            <p>Paste a job description to get the skills it asks for, split into required and nice to have. "SpringBoot" and "Spring MVC" both map to Spring; "JavaScript" doesn't count as Java.</p>
+          </article>
+          <article class="card feature">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>
+            <h3>Hiring trends</h3>
+            <p>Postings per company over the last four weeks against the four before, computed from ingested live postings.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="screens">
+      <div class="wrap">
+        <p class="eyebrow">Screens</p>
+        <h2 class="display-m">Your dashboard and the market board.</h2>
+        <p class="section-lede">Every step fits on one laptop screen. Long lists page inside their card, and details open in a dialog. Select a screen to see it full size.</p>
+        <div class="tabs" role="tablist" aria-label="Screen group">
+          <button role="tab" aria-selected="true" data-group="dashboard">Your dashboard</button>
+          <button role="tab" aria-selected="false" data-group="market">Market board</button>
+        </div>
+        <div class="gallery" data-group="dashboard">
+          <figure class="shot"><button data-full="profile-light"><img loading="lazy" src="assets/screens/profile-light.webp" width="1440" height="900" alt="Profile step: resume upload, skills and target locations"></button><figcaption><b>Profile</b> Upload a resume or type your skills</figcaption></figure>
+          <figure class="shot"><button data-full="matches-light" data-dark="matches-dark"><picture><source srcset="assets/screens/matches-dark.webp" media="(prefers-color-scheme: dark)"><img loading="lazy" src="assets/screens/matches-light.webp" width="1440" height="900" alt="Job matches list with match scores"></picture></button><figcaption><b>Job matches</b> Ranked roles with a score and reasons</figcaption></figure>
+          <figure class="shot"><button data-full="dialog-light"><img loading="lazy" src="assets/screens/dialog-light.webp" width="1440" height="900" alt="Job detail dialog explaining the match"></button><figcaption><b>Match detail</b> Why a role fits, in plain language</figcaption></figure>
+          <figure class="shot"><button data-full="skills-light"><img loading="lazy" src="assets/screens/skills-light.webp" width="1440" height="900" alt="Skills and roles step"></button><figcaption><b>Skills &amp; roles</b> Demand for what you know</figcaption></figure>
+          <figure class="shot"><button data-full="locations-light"><img loading="lazy" src="assets/screens/locations-light.webp" width="1440" height="900" alt="Locations step comparing pay and openings"></button><figcaption><b>Locations</b> Pay and openings per place</figcaption></figure>
+          <figure class="shot"><button data-full="upskill-light"><img loading="lazy" src="assets/screens/upskill-light.webp" width="1280" height="800" alt="Upskill plan with learning resources"></button><figcaption><b>Upskill</b> What to learn next, and what it unlocks</figcaption></figure>
+        </div>
+        <div class="gallery" data-group="market" hidden>
+          <figure class="shot"><button data-full="market-conditions-light"><img loading="lazy" src="assets/screens/market-conditions-light.webp" width="1440" height="900" alt="Market conditions board"></button><figcaption><b>Conditions</b> Hiring momentum, pay bands and visa ease</figcaption></figure>
+          <figure class="shot"><button data-full="market-companies-light"><img loading="lazy" src="assets/screens/market-companies-light.webp" width="1440" height="900" alt="Companies board scoring employers"></button><figcaption><b>Companies</b> Who is hiring for your profile</figcaption></figure>
+          <figure class="shot"><button data-full="overview-dark"><img loading="lazy" src="assets/screens/overview-dark.webp" width="1440" height="900" alt="Overview screen in dark mode"></button><figcaption><b>Dark mode</b> Follows your system setting</figcaption></figure>
+        </div>
+
+        <div class="phone-row">
+          <img class="phone" loading="lazy" src="assets/screens/overview-phone.webp" width="390" height="1569" alt="Tyche overview on a phone">
+          <div>
+            <p class="eyebrow">On the go</p>
+            <h3 class="title-l">Works on a phone too.</h3>
+            <p>The same dashboard reflows to a single column, so you can check a posting or your matches away from your desk.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="data">
+      <div class="wrap">
+        <p class="eyebrow">Data</p>
+        <h2 class="display-m">Two layers, both traceable.</h2>
+        <div class="two">
+          <div class="card">
+            <h3>Curated snapshot</h3>
+            <p>Pay bands, visa thresholds and hiring momentum for 11 locations, and 13 employers with roles checked by hand in October 2026. Each figure is traced to a public source, listed alongside the data.</p>
+          </div>
+          <div class="card">
+            <h3>Live postings</h3>
+            <p>An ingestion script pulls jobs from the Adzuna API, extracts skills from each description, and stores them in Postgres (Neon in production, a local SQLite file otherwise). Trends are computed from that table over time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="stack">
+      <div class="wrap">
+        <p class="eyebrow">How it's built</p>
+        <h2 class="display-m">Two services, one database.</h2>
+        <div class="features">
+          <article class="card feature">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+            <h3>API</h3>
+            <p>Python and FastAPI. Scores locations and companies, parses resumes and postings in memory, and serves the market data.</p>
+          </article>
+          <article class="card feature">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
+            <h3>Web app</h3>
+            <p>React, TypeScript and Vite. Every step fits on one laptop screen, reflows for phones, and follows your light or dark setting.</p>
+          </article>
+          <article class="card feature">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg>
+            <h3>Data</h3>
+            <p>Postgres on Neon stores live postings pulled from the Adzuna API, next to the hand-checked snapshot.</p>
+          </article>
+        </div>
+        <p class="note">The source code is private for now.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <img src="assets/logos/tyche-mark.svg" alt="" width="40" height="40">
+      <p><em>Named after the Greek goddess of fortune. Each ancient city had its own Tyche; this one ranks cities by the opportunities they hold for you.</em></p>
+    </div>
+  </footer>
+
+  <dialog class="viewer" id="viewer" aria-label="Screen preview">
+    <button class="viewer-close" aria-label="Close">×</button>
+    <img alt="">
+  </dialog>
+
+  <script>
+    // Screen group tabs
+    const tabs = document.querySelectorAll('[role="tab"]');
+    tabs.forEach(t => t.addEventListener('click', () => {
+      tabs.forEach(o => o.setAttribute('aria-selected', o === t));
+      document.querySelectorAll('.gallery').forEach(g => g.hidden = g.dataset.group !== t.dataset.group);
+    }));
+    // Full-size viewer
+    const viewer = document.getElementById('viewer');
+    const vImg = viewer.querySelector('img');
+    const dark = matchMedia('(prefers-color-scheme: dark)');
+    document.querySelectorAll('.shot button').forEach(b => b.addEventListener('click', () => {
+      const name = (dark.matches && b.dataset.dark) || b.dataset.full;
+      vImg.src = 'assets/screens/' + name + '.webp';
+      vImg.alt = b.querySelector('img').alt;
+      viewer.showModal();
+    }));
+    viewer.addEventListener('click', e => { if (e.target === viewer || e.target.closest('.viewer-close')) viewer.close(); });
+  </script>
+</body>
+</html>

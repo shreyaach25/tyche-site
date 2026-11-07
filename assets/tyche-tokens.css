@@ -1,0 +1,67 @@
+/* Tyche design tokens — generated from tokens.json. Light by default; dark follows the OS unless data-theme is set. */
+:root, [data-theme="light"] {
+  --coastal-depth: #1e6e6f;
+  --turquoise-tide: #4ec6d4;
+  --ocean-glass: #7ac7bd;
+  --sea-mist: #b6e6e9;
+  --sunlit-sand: #f2d9b7;
+  --deep-current: #123f40;
+  --surface: #ffffff;
+  --ink: #123f40;
+  --ink-muted: #3f6566;
+  --hairline: #d3e6e7;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --coastal-depth: #7ac7bd;
+    --turquoise-tide: #4ec6d4;
+    --ocean-glass: #7ac7bd;
+    --sea-mist: #b6e6e9;
+    --sunlit-sand: #f2d9b7;
+    --deep-current: #1e6e6f;
+    --surface: #0d2526;
+    --ink: #eaf7f8;
+    --ink-muted: #a9c9cb;
+    --hairline: #1f4446;
+  }
+}
+[data-theme="dark"] {
+  --coastal-depth: #7ac7bd;
+  --turquoise-tide: #4ec6d4;
+  --ocean-glass: #7ac7bd;
+  --sea-mist: #b6e6e9;
+  --sunlit-sand: #f2d9b7;
+  --deep-current: #1e6e6f;
+  --surface: #0d2526;
+  --ink: #eaf7f8;
+  --ink-muted: #a9c9cb;
+  --hairline: #1f4446;
+}
+:root {
+  --space-2: 8px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-10: 40px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --font-display: "Cinzel", "Trajan Pro", Georgia, serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-space-grotesk: 'Space Grotesk', sans-serif;
+}
+.display-xl { font-family: var(--font-display); font-size: 56px; line-height: 60px; font-weight: 600; letter-spacing: 0.04em; }
+.display-l { font-family: var(--font-display); font-size: 36px; line-height: 44px; font-weight: 600; letter-spacing: 0.04em; }
+.eyebrow { font-family: var(--font-display); font-size: 13px; line-height: 16px; font-weight: 700; letter-spacing: 0.16em; }
+.title { font-family: var(--font-sans); font-size: 20px; line-height: 28px; font-weight: 600; letter-spacing: 0; }
+.body { font-family: var(--font-sans); font-size: 16px; line-height: 24px; font-weight: 400; letter-spacing: 0; }
+.body-s { font-family: var(--font-sans); font-size: 14px; line-height: 20px; font-weight: 400; letter-spacing: 0; }
+.label { font-family: var(--font-sans); font-size: 13px; line-height: 16px; font-weight: 600; letter-spacing: 0; }
+.h1 { font-family: var(--font-space-grotesk); font-size: 13px; line-height: 16px; font-weight: 600; letter-spacing: 0; }
+
+/* Sensible defaults */
+body { background: var(--surface); color: var(--ink); font-family: var(--font-sans); }
+a { color: var(--coastal-depth); }
+.btn-primary { background: var(--coastal-depth); color: var(--surface); border-radius: var(--radius-md); padding: var(--space-2) var(--space-4); border: 0; font: 600 14px/20px var(--font-sans); }
+.card { background: var(--surface); border: 1px solid var(--hairline); border-radius: var(--radius-md); padding: var(--space-4); }
+.callout { background: var(--sunlit-sand); color: var(--deep-current); border-radius: var(--radius-md); padding: var(--space-4); }
+:focus-visible { outline: 2px solid var(--turquoise-tide); outline-offset: 2px; }

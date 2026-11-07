@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="Tyche icon"><title>Tyche icon</title>
+<circle cx="60" cy="60" r="56" fill="#1E6E6F"/>
+<g transform="translate(60 60) scale(1.5) translate(-60 -60)">
+<circle cx="60" cy="60" r="30" fill="none" stroke="#F2D9B7" stroke-width="3.6"/>
+<line x1="60.00" y1="51.50" x2="60.00" y2="30.00" stroke="#F2D9B7" stroke-width="3.2" stroke-linecap="round"/>
+<rect x="56.40" y="36.40" width="7.2" height="7.2" fill="#F2D9B7" transform="rotate(-45.0 60.00 40.00)"/>
+<line x1="66.01" y1="53.99" x2="81.21" y2="38.79" stroke="#F2D9B7" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="68.50" y1="60.00" x2="90.00" y2="60.00" stroke="#F2D9B7" stroke-width="3.2" stroke-linecap="round"/>
+<rect x="76.40" y="56.40" width="7.2" height="7.2" fill="#F2D9B7" transform="rotate(45.0 80.00 60.00)"/>
+<line x1="66.01" y1="66.01" x2="81.21" y2="81.21" stroke="#F2D9B7" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="60.00" y1="68.50" x2="60.00" y2="90.00" stroke="#F2D9B7" stroke-width="3.2" stroke-linecap="round"/>
+<rect x="56.40" y="76.40" width="7.2" height="7.2" fill="#F2D9B7" transform="rotate(135.0 60.00 80.00)"/>
+<line x1="53.99" y1="66.01" x2="38.79" y2="81.21" stroke="#F2D9B7" stroke-width="2.2" stroke-linecap="round"/>
+<line x1="51.50" y1="60.00" x2="30.00" y2="60.00" stroke="#F2D9B7" stroke-width="3.2" stroke-linecap="round"/>
+<rect x="36.40" y="56.40" width="7.2" height="7.2" fill="#F2D9B7" transform="rotate(225.0 40.00 60.00)"/>
+<line x1="53.99" y1="53.99" x2="38.79" y2="38.79" stroke="#F2D9B7" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="60" cy="60" r="8.5" fill="#1E6E6F" stroke="#F2D9B7" stroke-width="3"/><circle cx="60" cy="60" r="3.4" fill="#F2D9B7"/></g>
+</svg>
