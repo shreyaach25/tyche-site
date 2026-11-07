@@ -107,6 +107,8 @@ pre { margin: 0; background: #123f40; color: #eaf7f8; border-radius: var(--radiu
 .footer-inner { display: flex; align-items: center; gap: 20px; }
 .footer p { flex: 1; color: var(--ink-muted); font-size: 14px; max-width: 46em; }
 .footer a { font-size: 14px; }
+.legal { margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--hairline); }
+.legal p { font-size: 13px; color: var(--ink-muted); max-width: none; }
 
 /* Viewer */
 .viewer { padding: 0; border: 0; background: transparent; max-width: min(1440px, 94vw); }
