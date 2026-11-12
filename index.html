@@ -75,7 +75,7 @@
           <li>
             <span class="step-n">1</span>
             <h3>Tell it about you</h3>
-            <p>Upload a resume (PDF, DOCX or TXT) or type your skills, then pick the places you'd move to. The resume is parsed in memory and never stored.</p>
+            <p>Create a free account with your name, role and country. Then upload a resume (PDF, DOCX or TXT) or type your skills, then pick the places you'd move to. The resume is parsed in memory and never stored.</p>
           </li>
           <li>
             <span class="step-n">2</span>
@@ -134,10 +134,11 @@
       <div class="wrap">
         <p class="eyebrow">Screens</p>
         <h2 class="display-m">Your dashboard and the market board.</h2>
-        <p class="section-lede">Every step fits on one laptop screen. Long lists page inside their card, and details open in a dialog. Select a screen to see it full size.</p>
+        <p class="section-lede">Every step fits on one laptop screen, sign-in included. Long lists page inside their card, and details open in a dialog. Select a screen to see it full size.</p>
         <div class="tabs" role="tablist" aria-label="Screen group">
           <button role="tab" aria-selected="true" data-group="dashboard">Your dashboard</button>
           <button role="tab" aria-selected="false" data-group="market">Market board</button>
+          <button role="tab" aria-selected="false" data-group="account">Your account</button>
         </div>
         <div class="gallery" data-group="dashboard">
           <figure class="shot"><button data-full="profile-light"><img loading="lazy" src="assets/screens/profile-light.webp" width="1440" height="900" alt="Profile step: resume upload, skills and target locations"></button><figcaption><b>Profile</b> Upload a resume or type your skills</figcaption></figure>
@@ -151,6 +152,12 @@
           <figure class="shot"><button data-full="market-conditions-light"><img loading="lazy" src="assets/screens/market-conditions-light.webp" width="1440" height="900" alt="Market conditions board"></button><figcaption><b>Conditions</b> Hiring momentum, pay bands and visa ease</figcaption></figure>
           <figure class="shot"><button data-full="market-companies-light"><img loading="lazy" src="assets/screens/market-companies-light.webp" width="1440" height="900" alt="Companies board scoring employers"></button><figcaption><b>Companies</b> Who is hiring for your profile</figcaption></figure>
           <figure class="shot"><button data-full="overview-dark"><img loading="lazy" src="assets/screens/overview-dark.webp" width="1440" height="900" alt="Overview screen in dark mode"></button><figcaption><b>Dark mode</b> Follows your system setting</figcaption></figure>
+        </div>
+
+        <div class="gallery" data-group="account" hidden>
+          <figure class="shot"><button data-full="signin-light" data-dark="signin-dark"><picture><source srcset="assets/screens/signin-dark.webp" media="(prefers-color-scheme: dark)"><img loading="lazy" src="assets/screens/signin-light.webp" width="1440" height="900" alt="Sign-in screen with email and password"></picture></button><figcaption><b>Sign in</b> Email and password, one screen</figcaption></figure>
+          <figure class="shot"><button data-full="signup-light" data-dark="signup-dark"><picture><source srcset="assets/screens/signup-dark.webp" media="(prefers-color-scheme: dark)"><img loading="lazy" src="assets/screens/signup-light.webp" width="1440" height="900" alt="Create account form: full name, date of birth, country, job role, years of experience, email and password"></picture></button><figcaption><b>Create account</b> Name, date of birth, country and role</figcaption></figure>
+          <figure class="shot"><button data-full="signin-dark"><img loading="lazy" src="assets/screens/signin-dark.webp" width="1440" height="900" alt="Sign-in screen in dark mode"></button><figcaption><b>Dark mode</b> Sign-in follows your system setting too</figcaption></figure>
         </div>
 
         <div class="phone-row">
@@ -185,7 +192,7 @@
       <div class="wrap">
         <p class="eyebrow">How it's built</p>
         <h2 class="display-m">Two services, one database.</h2>
-        <div class="features">
+        <div class="features four">
           <article class="card feature">
             <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
             <h3>API</h3>
@@ -200,6 +207,11 @@
             <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="6" rx="7" ry="3"/><path d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"/></svg>
             <h3>Data</h3>
             <p>Postgres on Neon stores live postings pulled from the Adzuna API, next to the hand-checked snapshot.</p>
+          </article>
+          <article class="card feature">
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3M12 15v2"/></svg>
+            <h3>Accounts</h3>
+            <p>Passwords are stored only as salted scrypt hashes. Sign-in uses a session cookie that page scripts can't read, and signing out ends the session at once.</p>
           </article>
         </div>
         <p class="note">The source code is private for now.</p>
